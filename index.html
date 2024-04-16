@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Daftar Tugas</title>
+    <!-- Sertakan Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tambahkan CSS kustom -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Daftar Tugas</h1>
+      <form id="todo-form" class="mb-3">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="todo-input"
+            placeholder="Tambahkan tugas baru"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah</button>
+      </form>
+      <ul id="todo-list" class="list-group"></ul>
+    </div>
+
+    <!-- Pindahkan tag skrip ke akhir body agar halaman lebih cepat dimuat -->
+    <script src="script.js"></script>
+  </body>
+</html>
